@@ -1,0 +1,15 @@
+# REST Client tests on https://github.com/tronalddump-io/tronald-app
+@baseUrl = http://localhost:8080
+
+### List Product
+GET {{baseUrl}}/products
+
+
+### Create new Product
+
+POST {{baseUrl}}/products
+content-type: application/json
+
+{
+    "name": "custom"
+}
